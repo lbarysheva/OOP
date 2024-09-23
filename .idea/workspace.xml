@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0603b3c5-62d4-4925-92ef-5a2a963f3051" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_1/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_1/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OOP.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="0603b3c5-62d4-4925-92ef-5a2a963f3051" name="Changes" comment="configure file &quot;build.gradle&quot;">
+      <change afterPath="$PROJECT_DIR$/Task_1_1_1/src/main/java/nsu/barysheva/HeapSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_1/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +37,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -58,7 +56,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "task-1-1-1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/lesia/Desktop/OOP"
   }
@@ -72,6 +70,19 @@
       <option name="presentableId" value="Default" />
       <updated>1727024836458</updated>
     </task>
+    <task id="LOCAL-00001" summary="configure file &quot;build.gradle&quot;">
+      <option name="closed" value="true" />
+      <created>1727065019462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727065019462</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="configure file &quot;build.gradle&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="configure file &quot;build.gradle&quot;" />
   </component>
 </project>
