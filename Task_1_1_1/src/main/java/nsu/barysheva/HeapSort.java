@@ -70,6 +70,15 @@ public class HeapSort {
      */
 
     public static void main(String[] args) {
-
+        int[] input_array = new int[] {100, -456, 34567, 34, 567, 0};
+        System.out.print("integer array: ");
+        for (int el : input_array){
+            System.out.print(el + " ");
+        }
+        System.out.print("\narray after heapsort: ");
+        sort(input_array, 6);
+        for (int el : input_array){
+            System.out.print(el + " ");
+        }
     }
 }
