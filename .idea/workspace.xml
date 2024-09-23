@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0603b3c5-62d4-4925-92ef-5a2a963f3051" name="Changes" comment="add some tests">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="0603b3c5-62d4-4925-92ef-5a2a963f3051" name="Changes" comment="add test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_1/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_1/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
@@ -17,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/Task_1_1_1/build/classes/java/main/nsu/barysheva/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/build/classes/java/main/nsu/barysheva/HeapSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_1/build/tmp/compileJava/compileTransaction/stash-dir/HeapSort.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/build/tmp/compileJava/compileTransaction/stash-dir/HeapSort.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_1/src/main/java/nsu/barysheva/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/src/main/java/nsu/barysheva/HeapSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_1/src/test/java/nsu/barysheva/HeapSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/src/test/java/nsu/barysheva/HeapSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +64,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -76,6 +79,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.HeapSortTest.executor": "Run",
+    "Gradle.HeapSortTest.test_sort3.executor": "Run",
     "Gradle.Task_1_1_1 [:nsu.barysheva.HeapSort.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -174,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727077661634</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add test">
+      <option name="closed" value="true" />
+      <created>1727080302763</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727080302763</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,20 +194,21 @@
     <MESSAGE value="rename &quot;Main.java&quot; to &quot;HeapSort.java&quot; and add functions" />
     <MESSAGE value="add javadoc to main file" />
     <MESSAGE value="add some tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some tests" />
+    <MESSAGE value="add test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Task_1_1_1/src/main/java/nsu/barysheva/HeapSort.java</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1727078114988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1727080268493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

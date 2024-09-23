@@ -13,7 +13,7 @@ public class HeapSort {
      * @param b - index of second element
      */
 
-    void swap(int[] arr, int a, int b) {
+    static void swap(int[] arr, int a, int b) {
         int tmp = arr[a];
         arr[a] = arr[b];
         arr[b] = tmp;
@@ -27,7 +27,7 @@ public class HeapSort {
      * @param i - needed index of element
      */
 
-    void heapify(int[] arr, int n, int i) {
+    static void heapify(int[] arr, int n, int i) {
         int largest = i;
         int l = 2 * i + 1;
         int r = 2 * i + 2;
@@ -52,7 +52,7 @@ public class HeapSort {
      * @param n - length of the array
      */
 
-    void sort(int[] arr, int n) {
+    static void sort(int[] arr, int n) {
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(arr, n, i);
         }
@@ -70,5 +70,6 @@ public class HeapSort {
      */
 
     public static void main(String[] args) {
+
     }
 }
