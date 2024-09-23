@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class HeapSortTest {
 
@@ -41,6 +42,12 @@ class HeapSortTest {
         HeapSort ob = new HeapSort();
         HeapSort.sort(testArray, 5);
         assertArrayEquals(a, testArray);
+    }
+
+    @Test
+    void main_test(){
+        HeapSort.main(null);
+        assertTrue(true);
     }
 
 }
