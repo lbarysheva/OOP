@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94425244-0bd0-400b-8c06-64664f40deb3" name="Changes" comment="" />
+    <list default="true" id="94425244-0bd0-400b-8c06-64664f40deb3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/AddTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/DivTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/ExpressionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/MulTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/NumberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/SubTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/VariableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,9 +32,24 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lbarysheva"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lbarysheva/OOP.git",
+    "accountId": "a114bd20-5bcb-4a3a-99ff-92e9b901bf6b"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2nA1a5BrpbKrqDa3KTXueLptcht" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,7 +57,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "Gradle.Task_1_1_3 [:nsu.barysheva.Main.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
