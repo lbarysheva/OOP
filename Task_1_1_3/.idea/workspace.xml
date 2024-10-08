@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94425244-0bd0-400b-8c06-64664f40deb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/AddTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/DivTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/ExpressionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/MulTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/NumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/SubTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/VariableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="94425244-0bd0-400b-8c06-64664f40deb3" name="Changes" comment="added tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,6 +61,14 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="nsu.barysheva" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,6 +78,19 @@
       <option name="presentableId" value="Default" />
       <updated>1728401129360</updated>
     </task>
+    <task id="LOCAL-00001" summary="added tests">
+      <option name="closed" value="true" />
+      <created>1728402372642</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728402372642</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
   </component>
 </project>
