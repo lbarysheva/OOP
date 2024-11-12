@@ -1,4 +1,4 @@
-package org.example;
+package nsu.barysheva;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
