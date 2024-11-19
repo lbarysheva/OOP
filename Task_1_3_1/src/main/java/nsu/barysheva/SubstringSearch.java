@@ -39,6 +39,7 @@ public class SubstringSearch {
 
     /**
      * Knuth-Morris-Pratt pattern matching algorithm.
+     *
      */
     private void searchPattern(String text, ArrayList<Integer> matchIndices) {
         int[] prefixTable = buildPrefixTable(pattern);
