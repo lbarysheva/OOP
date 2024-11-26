@@ -1,20 +1,9 @@
 package nsu.barysheva;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-/**
- * Тестовый класс для проверки функциональности класса AcademicRecord.
- */
-class AcademicRecordTest {
-
-    /**
-     * Проверка корректного добавления записей.
-     */
+class GradeBookTest {
     @Test
     public void testAddRecordWithValidData() {
         GradeBook record = new GradeBook(true);
@@ -128,5 +117,4 @@ class AcademicRecordTest {
         // Сравниваем реальный вывод с ожидаемым
         assertEquals(expectedOutput.trim(), gradeBook.toString().trim());
     }
-
 }
