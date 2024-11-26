@@ -101,4 +101,5 @@ class AcademicRecordTest {
         // После добавления оценки ниже 4, красный диплом недоступен
         assertFalse(gradeBook.isEligibleForHonorsDiploma());
     }
+
 }
