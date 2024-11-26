@@ -3,6 +3,7 @@ package nsu.barysheva;
 /**
  * Главный класс для демонстрации работы с классом GradeBook.
  */
+
 public class Main {
     public static void main(String[] args) {
         GradeBook book = new GradeBook(true);
