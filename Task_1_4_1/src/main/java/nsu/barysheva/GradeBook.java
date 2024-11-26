@@ -3,11 +3,18 @@ package nsu.barysheva;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Класс GradeBook моделирует зачётную книжку студента
+ */
 public class GradeBook {
     private final List<RecordEntry> records; // Хранение записей об оценках
     private final boolean isFeeBased; // Форма обучения: true - платная, false - бюджетная
 
+    /**
+     * Конструктор, создающий объект зачётной книжки.
+     *
+     * @param isFeeBased - true, если студент на данный момент обучается на платной основе
+     */
 
     public GradeBook(boolean isFeeBased) {
         this.records = new ArrayList<>();
@@ -15,8 +22,7 @@ public class GradeBook {
     }
 
     /**
-     * Метод для добавления оценки в академическую запись.
-     *
+     * Метод для добавления оценки в зачетную книжку.
      *
      */
     public void addRecord(String subject, String controlType, int semester, int mark) {
