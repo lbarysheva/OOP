@@ -84,12 +84,17 @@ public class GradeBook {
      *
      */
     public boolean isEligibleForHonorsDiploma() {
+        // Проверяем, что нет неудовлетворительных оценок
         boolean noUnsatisfactoryMarks = records.stream().allMatch(record -> record.getMark() >= 4);
+
+        // Подсчитываем количество отличных оценок (оценка 5)
         long excellentMarksCount = records.stream().filter(record -> record.getMark() == 5).count();
+
+        // Проверяем, есть ли ВКР с оценкой 5
         boolean thesisExcellent = records.stream()
                 .anyMatch(record -> record.getControlType().equals("ВКР") && record.getMark() == 5);
 
-        // Проверяем, что 75% оценок "отлично" и ВКР на "отлично"
+        // Студент должен иметь все оценки не ниже 4, не менее 75% оценок 5 и ВКР с оценкой 5
         return noUnsatisfactoryMarks &&
                 excellentMarksCount >= records.size() * 0.75 &&
                 thesisExcellent;
