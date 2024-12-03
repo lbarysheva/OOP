@@ -31,28 +31,8 @@ public class SubstringSearch {
                 // Объединяем текущий буфер с остатком предыдущего
                 String combinedChunk = overflow.append(currentChunk).toString();
 
-                // Ищем паттерн в объединённом тексте
-                int textIndex = 0;
-                int patternIndex = 0;
-
-                while (textIndex < combinedChunk.length()) {
-                    if (pattern.charAt(patternIndex) == combinedChunk.charAt(textIndex)) {
-                        textIndex++;
-                        patternIndex++;
-                    }
-
-                    if (patternIndex == pattern.length()) {
-                        // Нашли совпадение
-                        matchIndices.add(offset + textIndex - patternIndex);
-                        patternIndex = prefixTable[patternIndex - 1];
-                    } else if (textIndex < combinedChunk.length() && pattern.charAt(patternIndex) != combinedChunk.charAt(textIndex)) {
-                        if (patternIndex != 0) {
-                            patternIndex = prefixTable[patternIndex - 1];
-                        } else {
-                            textIndex++;
-                        }
-                    }
-                }
+                // Ищем паттерн в объединённом тексте с использованием searchPattern
+                int lastProcessedIndex = searchPattern(combinedChunk, pattern, prefixTable, matchIndices, offset);
 
                 // Сохраняем остаток строки для следующей итерации
                 int lastValidIndex = Math.max(0, combinedChunk.length() - pattern.length() + 1);
