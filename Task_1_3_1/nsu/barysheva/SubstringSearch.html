@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -152,10 +152,8 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">SubstringSearch</a></span>&#8203;(java.lang.String&nbsp;pattern)</code></th>
-<td class="colLast">
-<div class="block">Constructor to initialize the pattern to search for.</div>
-</td>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">SubstringSearch</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -169,17 +167,18 @@ extends java.lang.Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.ArrayList&lt;java.lang.Integer&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#find(java.lang.String)">find</a></span>&#8203;(java.lang.String&nbsp;filePath)</code></th>
+<td class="colFirst"><code>static java.util.ArrayList&lt;java.lang.Integer&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#find(java.lang.String,java.lang.String)">find</a></span>&#8203;(java.lang.String&nbsp;filePath,
+    java.lang.String&nbsp;pattern)</code></th>
 <td class="colLast">
-<div class="block">Method for searching the pattern in the file using the Knuth-Morris-Pratt algorithm.</div>
+<div class="block">Метод для поиска паттерна в файле с использованием алгоритма Кнута-Морриса-Пратта.</div>
 </td>
 </tr>
 </table>
@@ -206,14 +205,13 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.String)">
+<a id="&lt;init&gt;()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SubstringSearch</h4>
-<pre>public&nbsp;SubstringSearch&#8203;(java.lang.String&nbsp;pattern)</pre>
-<div class="block">Constructor to initialize the pattern to search for.</div>
+<pre>public&nbsp;SubstringSearch()</pre>
 </li>
 </ul>
 </li>
@@ -226,18 +224,24 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="find(java.lang.String)">
+<a id="find(java.lang.String,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>find</h4>
-<pre class="methodSignature">public&nbsp;java.util.ArrayList&lt;java.lang.Integer&gt;&nbsp;find&#8203;(java.lang.String&nbsp;filePath)
-                                            throws java.io.IOException</pre>
-<div class="block">Method for searching the pattern in the file using the Knuth-Morris-Pratt algorithm.</div>
+<pre class="methodSignature">public static&nbsp;java.util.ArrayList&lt;java.lang.Integer&gt;&nbsp;find&#8203;(java.lang.String&nbsp;filePath,
+                                                          java.lang.String&nbsp;pattern)
+                                                   throws java.io.IOException</pre>
+<div class="block">Метод для поиска паттерна в файле с использованием алгоритма Кнута-Морриса-Пратта.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>filePath</code> - путь к файлу</dd>
+<dd><code>pattern</code> - строка для поиска</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>список индексов начала вхождений</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - если возникает ошибка ввода-вывода</dd>
 </dl>
 </li>
 </ul>
