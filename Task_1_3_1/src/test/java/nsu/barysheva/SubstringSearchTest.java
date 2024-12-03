@@ -12,60 +12,64 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
 class SubstringSearchTest {
     @Test
     void startTest() throws IOException {
-        SubstringSearch actual = new SubstringSearch("бра");
+        String pattern = "бра";
         ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(1, 8));
-        assertEquals(expected, actual.find("src/test/resources/input.txt"));
+        ArrayList<Integer> actual = SubstringSearch.find("src/test/resources/input.txt", pattern);
+        assertEquals(expected, actual);
     }
 
     @Test
     void testEmptyArr() throws IOException {
-        SubstringSearch actual = new SubstringSearch(" ");
+        String pattern = " ";
         ArrayList<Integer> expected = new ArrayList<>();
-        assertEquals(expected, actual.find("src/test/resources/input.txt"));
+        ArrayList<Integer> actual = SubstringSearch.find("src/test/resources/input.txt", pattern);
+        assertEquals(expected, actual);
     }
 
     @Test
     void testLargeFile() throws IOException {
-        SubstringSearch actual = new SubstringSearch("Анна Павловна");
+        String pattern = "Анна Павловна";
         ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(2203, 2355, 3692, 5116));
-        assertEquals(expected, actual.find("src/test/resources/input1.txt"));
+        ArrayList<Integer> actual = SubstringSearch.find("src/test/resources/input1.txt", pattern);
+        assertEquals(expected, actual);
     }
+
 
     @Test
     void testLargeGeneratedFile() throws IOException {
-        // Генерация большого файла
         String fileName = "src/test/resources/largeTestFile.txt";
         String pattern = "abracadabra";
 
-        // Создадим строку, которая будет содержать 10 миллионов символов
+        // Создание большого файла
         StringBuilder largeContent = new StringBuilder();
         for (int i = 0; i < 1000000; i++) {
-            largeContent.append("abracadabra");  // Добавляем паттерн, чтобы получить много вхождений
+            largeContent.append("abracadabra");
         }
-
-        // Запишем содержимое в файл
         Files.write(Paths.get(fileName), largeContent.toString().getBytes());
 
-        // Создаем объект для поиска
-        SubstringSearch actual = new SubstringSearch(pattern);
+        try {
+            ArrayList<Integer> matches = SubstringSearch.find(fileName, pattern);
 
-        // Выполняем поиск
-        ArrayList<Integer> matches = actual.find(fileName);
+            assertTrue(matches.size() > 0, "Должно быть хотя бы одно совпадение");
+            assertEquals(1000000, matches.size(), "Количество совпадений должно быть равно количеству повторений паттерна");
+            assertEquals(0, matches.get(0), "Первое совпадение должно начинаться с позиции 0");
+            assertEquals(11, matches.get(1), "Второе совпадение должно начинаться с позиции 11");
+        }
+        finally {
+            Files.delete(Paths.get(fileName));
+        }
+    }
 
-        // Проверяем, что нашли вхождения
-        assertTrue(matches.size() > 0, "Должно быть хотя бы одно совпадение");
-        assertEquals(1000000, matches.size(), "Количество совпадений должно быть равно количеству повторений паттерна");
-
-        // Проверяем, что совпадения начинаются с правильных позиций
-        assertEquals(0, matches.get(0), "Первое совпадение должно начинаться с позиции 0");
-        assertEquals(11, matches.get(1), "Второе совпадение должно начинаться с позиции 11");
-
-        // Удаляем тестовый файл после завершения теста
-        Files.delete(Paths.get(fileName));
-
+    @Test
+    void foreingTest() throws IOException {
+        String pattern = "界";
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(7, 17));
+        ArrayList<Integer> actual = SubstringSearch.find("src/test/resources/input2.txt", pattern);
+        assertEquals(expected, actual);
     }
 
 }

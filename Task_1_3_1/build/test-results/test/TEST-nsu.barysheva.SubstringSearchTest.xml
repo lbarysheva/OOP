@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nsu.barysheva.SubstringSearchTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-11-19T14:22:34" hostname="MacBook-Air-Olesya.local" time="0.147">
+<testsuite name="nsu.barysheva.SubstringSearchTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-12-03T03:26:32" hostname="Air-Olesya.dlink" time="0.176">
   <properties/>
-  <testcase name="startTest()" classname="nsu.barysheva.SubstringSearchTest" time="0.008"/>
-  <testcase name="testLargeFile()" classname="nsu.barysheva.SubstringSearchTest" time="0.001"/>
-  <testcase name="testLargeGeneratedFile()" classname="nsu.barysheva.SubstringSearchTest" time="0.135"/>
-  <testcase name="testEmptyArr()" classname="nsu.barysheva.SubstringSearchTest" time="0.0"/>
+  <testcase name="startTest()" classname="nsu.barysheva.SubstringSearchTest" time="0.01"/>
+  <testcase name="foreingTest()" classname="nsu.barysheva.SubstringSearchTest" time="0.001"/>
+  <testcase name="testLargeFile()" classname="nsu.barysheva.SubstringSearchTest" time="0.002"/>
+  <testcase name="testLargeGeneratedFile()" classname="nsu.barysheva.SubstringSearchTest" time="0.16"/>
+  <testcase name="testEmptyArr()" classname="nsu.barysheva.SubstringSearchTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
