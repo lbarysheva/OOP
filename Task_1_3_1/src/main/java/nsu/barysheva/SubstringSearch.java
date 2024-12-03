@@ -25,17 +25,19 @@ public class SubstringSearch {
             int bytesRead;
 
             while ((bytesRead = inputStream.read(buffer)) != -1) {
-                // Преобразуем байты в строку
-                String currentChunk = new String(buffer, 0, bytesRead, StandardCharsets.UTF_8);
+                // Вместо строки создаём StringBuilder для хранения данных
+                StringBuilder currentChunk = new StringBuilder();
+                currentChunk.append(new String(buffer, 0, bytesRead, StandardCharsets.UTF_8));
 
                 // Объединяем текущий буфер с остатком предыдущего
-                String combinedChunk = overflow.append(currentChunk).toString();
+                String combinedChunk = overflow.append(currentChunk.toString()).toString();
 
                 // Ищем паттерн в объединённом тексте с использованием searchPattern
                 int lastProcessedIndex = searchPattern(combinedChunk, pattern, prefixTable, matchIndices, offset);
 
                 // Сохраняем остаток строки для следующей итерации
                 int lastValidIndex = Math.max(0, combinedChunk.length() - pattern.length() + 1);
+                // Очищаем StringBuilder и добавляем остаток
                 overflow.setLength(0);
                 overflow.append(combinedChunk.substring(lastValidIndex));
 
