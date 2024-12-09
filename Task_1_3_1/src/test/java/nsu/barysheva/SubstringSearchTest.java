@@ -2,7 +2,11 @@ package nsu.barysheva;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -38,32 +42,6 @@ class SubstringSearchTest {
         assertEquals(expected, actual);
     }
 
-
-    @Test
-    void testLargeGeneratedFile() throws IOException {
-        String fileName = "src/test/resources/largeTestFile.txt";
-        String pattern = "abracadabra";
-
-        // Создание большого файла
-        StringBuilder largeContent = new StringBuilder();
-        for (int i = 0; i < 1000000; i++) {
-            largeContent.append("abracadabra");
-        }
-        Files.write(Paths.get(fileName), largeContent.toString().getBytes());
-
-        try {
-            ArrayList<Integer> matches = SubstringSearch.find(fileName, pattern);
-
-            assertTrue(matches.size() > 0, "Должно быть хотя бы одно совпадение");
-            assertEquals(1000000, matches.size(), "Количество совпадений должно быть равно количеству повторений паттерна");
-            assertEquals(0, matches.get(0), "Первое совпадение должно начинаться с позиции 0");
-            assertEquals(11, matches.get(1), "Второе совпадение должно начинаться с позиции 11");
-        }
-        finally {
-            Files.delete(Paths.get(fileName));
-        }
-    }
-
     @Test
     void foreingTest() throws IOException {
         String pattern = "界";
@@ -72,4 +50,41 @@ class SubstringSearchTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testFindSubstringInBigString() throws IOException {
+        try (FileWriter writer = new FileWriter("test.txt", true)) {
+            writer.write("абра".repeat(2000000));
+        }
+
+        List<Integer> indices = SubstringSearch.find("test.txt", "бра");
+
+        assertEquals(2000000, indices.size());
+
+        File file = new File("test.txt");
+        if (file.exists()) {
+            assertTrue(file.delete());
+        }
+    }
+
+    @Test
+    void emojiTest() throws IOException {
+        String fileName = "src/test/resources/inputEmoji.txt";
+        String pattern = "😊"; // Эмодзи для поиска
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(5, 12, 19)); // Ожидаемые позиции эмодзи в файле
+
+        // Создание файла с содержимым, содержащим эмодзи
+        try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(fileName), StandardCharsets.UTF_8)) {
+            writer.write("Hello😊world😊again😊!");
+        }
+
+        try {
+            ArrayList<Integer> actual = SubstringSearch.find(fileName, pattern);
+
+            // Проверка совпадений
+            assertEquals(expected, actual, "Результаты поиска эмодзи должны совпадать с ожидаемыми позициями.");
+        } finally {
+            // Удаление файла после теста
+            Files.delete(Paths.get(fileName));
+        }
+    }
 }

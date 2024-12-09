@@ -11,19 +11,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/nsu/barysheva/SubstringSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/nsu/barysheva/SubstringSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/nsu/barysheva/SubstringSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/nsu/barysheva/SubstringSearchTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/nsu.barysheva.SubstringSearchTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/nsu.barysheva.SubstringSearchTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/nsu.barysheva.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/nsu.barysheva.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-nsu.barysheva.SubstringSearchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-nsu.barysheva.SubstringSearchTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SubstringSearch.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SubstringSearch.class.uniqueId0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/SubstringSearchTest.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/SubstringSearchTest.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nsu/barysheva/SubstringSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nsu/barysheva/SubstringSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nsu/barysheva/SubstringSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nsu/barysheva/SubstringSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,21 +86,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.SubstringSearchTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_3_1 [:nsu.barysheva.KMPSearch.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_3_1 [:nsu.barysheva.SubstringFinder.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lesia/Desktop/OOP/Task_1_3_1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.SubstringSearchTest (1).executor": "Run",
+    "Gradle.SubstringSearchTest.emojiTest.executor": "Run",
+    "Gradle.SubstringSearchTest.executor": "Run",
+    "Gradle.SubstringSearchTest.testFindSubstringInBigString.executor": "Run",
+    "Gradle.Task_1_3_1 [:nsu.barysheva.KMPSearch.main()].executor": "Run",
+    "Gradle.Task_1_3_1 [:nsu.barysheva.SubstringFinder.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/lesia/Desktop/OOP/Task_1_3_1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -110,7 +112,7 @@
       <recent name="nsu.barysheva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SubstringSearchTest">
+  <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nsu.barysheva.SubstringSearch" />
       <method v="2">
@@ -141,12 +143,64 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SubstringSearchTest.emojiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nsu.barysheva.SubstringSearchTest.emojiTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SubstringSearchTest.testFindSubstringInBigString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nsu.barysheva.SubstringSearchTest.testFindSubstringInBigString&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Gradle.SubstringSearchTest.emojiTest" />
+      <item itemvalue="Gradle.SubstringSearchTest.testFindSubstringInBigString" />
       <item itemvalue="Gradle.SubstringSearchTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SubstringSearchTest.testFindSubstringInBigString" />
+        <item itemvalue="Gradle.SubstringSearchTest.emojiTest" />
         <item itemvalue="Gradle.SubstringSearchTest" />
       </list>
     </recent_temporary>
@@ -232,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733200335583</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="some fixes">
+      <option name="closed" value="true" />
+      <created>1733207348885</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733207348885</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
