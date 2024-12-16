@@ -4,9 +4,8 @@ package org.example;
  * Abstract base class for document elements.
  */
 public abstract class Element {
-    /**
-     * Converts the element to a string representation.
-     */
+
+
     public abstract String toString();
 
     /**
