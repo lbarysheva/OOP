@@ -3,7 +3,6 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Table.Builder tableBuilder = new Table.Builder()
-
                 .withAlignments(Table.ALIGN_RIGHT, Table.ALIGN_LEFT)
                 .withRowLimit(8)
                 .addRow("Index", "Random");
