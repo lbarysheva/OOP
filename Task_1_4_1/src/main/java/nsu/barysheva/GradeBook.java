@@ -126,13 +126,13 @@ public class GradeBook {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("Состояние зачётной книжки студента:\n");
-        builder.append(String.format("%-15s %-20s %-10s %-10s%n", "Предмет", "Тип контроля", "Семестр", "Оценка"));
-        builder.append("-----------------------------------------------------------\n");
+        builder.append(String.format("%-20s %-20s %-10s %-10s%n", "Предмет", "Тип контроля", "Семестр", "Оценка"));
+        builder.append("----------------------------------------------------------------\n");
         for (RecordEntry entry : records) {
-            builder.append(String.format("%-15s %-20s %-10d %-10d%n",
+            builder.append(String.format("%-20s %-20s %-10d %-10d%n",
                     entry.getSubject(), entry.getControlType(), entry.getSemester(), entry.getMark()));
         }
-        builder.append("-----------------------------------------------------------\n");
+        builder.append("----------------------------------------------------------------\n");
         builder.append(String.format("Средний балл: %.2f%n", calculateAverageMark()));
         builder.append("Перевод на бюджет: ").append(checkBudgetEligibility()).append("\n");
         builder.append("Красный диплом: ").append(isEligibleForHonorsDiploma() ? "Да" : "Нет").append("\n");
